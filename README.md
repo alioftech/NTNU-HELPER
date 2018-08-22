@@ -1,9 +1,8 @@
 # NTNU-HELPER
-These are some resources I came across and found to be helpful in my time at NTNU. Hop
+These are some resources I came across and found to be helpful in my time at NTNU. Hope this can be of some help to someone out there.
 
 ## Prerequisites
 * Internet
-* Enough RAM
 
 
 ## Books and soltuion manuals and compendium
