@@ -30,7 +30,7 @@ These are some resources I came across and found to be helpful in my time at NTN
 
 
 ## List of subjects
-[TDT4120 - Algoritmer og datastrukturer](../TDT4120%20Algoritmer%20og%20datastrukturer/)
+[TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
 
 I'll be adding more as times allows me to do so.
 
