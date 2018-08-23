@@ -66,6 +66,8 @@ A collection of resources containing summaries, video lectures, exams and more. 
 
 
 ## Other helpful links
+* [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges) - Interactive, test-driven coding challenges (algorithms and data structures).
+
 * Coming soon
 
 
