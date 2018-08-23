@@ -16,7 +16,7 @@ A collection of resources containing summaries, video lectures, exams and more. 
 ## Video lectures 
 
 * [MIT Introduction to Algorithims (SMA 5503)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/) - Video lectuers from MIT (2nd edition of the book)
-* [Introduction to Algorithims (MIT)] (https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) - 6.006 MIT course
+* [Introduction to Algorithims (MIT)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) - 6.006 MIT course
 
 
 
