@@ -11,12 +11,12 @@ These are some resources I came across and found to be helpful in my time at NTN
 * [Wikipendium.no](https://www.wikipendium.no/) - compendium in most big subjects 
 
 
-
 ## Quick Cheats
 
+* [Github Search](https://github.com/search) - Find most subjects, code examples and more. Start looking here!
 * [YouKok2.com](youkok2.com) - Exams and soltuions sharing
 * [Youkok.com](http://youkok.com/) - INDØK ER "HOMO"
-* [Github Search](https://github.com/search) - Find most subjects, code examples and more. Start looking here!
+
 
 ## Technical Stuff
 * [Printer @ NTNU](https://innsida.ntnu.no/it-hjelp) - Setup printer, vpn and more (help pages)
@@ -30,7 +30,7 @@ These are some resources I came across and found to be helpful in my time at NTN
 
 
 ## List of subjects
-[TDT4120 - Algoritmer og datastrukturer](../TDT4120 Algoritmer og datastrukturer)
+[TDT4120 - Algoritmer og datastrukturer](../TDT4120%20Algoritmer%20og%20datastrukturer/)
 
 I'll be adding more as times allows me to do so.
 
