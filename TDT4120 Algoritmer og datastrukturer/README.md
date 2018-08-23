@@ -7,9 +7,19 @@ A collection of resources containing summaries, video lectures, exams and more. 
 
 ## Books and summaries    
 
-* [Introduction to algorithims 3rd ed.](https://github.com/haseebr/competitive-programming/blob/master/Materials/Introduction%20to%20Algorithms%20-%203rd%20Edition.pdf) - curriculum book
+* [Introduction to algorithims 3rd ed.](https://github.com/haseebr/competitive-programming/blob/master/Materials/Introduction%20to%20Algorithms%20-%203rd%20Edition.pdf) - Curriculum book
 * [Wikipendium TDT4120](https://www.wikipendium.no/TDT4120_Algoritmer_og_datastrukturer/nb/) - Compendium  
 * [Morten Fyhn Summary](../Summaries/TDT4120-Oversikt-Morten-Fyhn.pdf) - Morten Fyhn short summary.
+* [Algorithm Design](https://www.pearsonhighered.com/program/Kleinberg-Algorithm-Design/PGM319216.html) - Pretty straight-forward.
+* [Algorithms](http://algs4.cs.princeton.edu/home/) - Problems explained with Java, OO good practices, visualizations, and free online resources.
+* [Data Structures Using C](http://www.amazon.com/Data-Structures-Using-Aaron-Tenenbaum/dp/0131997467) - The basic concepts and usages of data structures.
+* [Elementary Algorithms](https://github.com/liuxinyu95/AlgoXY) - An awesome book about algorithms and data structures.
+* [Grokking Algorithms](http://www.manning.com/bhargava) - An illustrated book on algorithms with practical examples.
+* [Introduction to Algorithms](http://mitpress.mit.edu/books/introduction-algorithms) - Essential!
+* [Swift Algorithms & Data Structures](http://shop.waynewbishop.com/) - A practical guide to concepts, theory and code.
+* [The Algorithm Design Manual](http://www.algorist.com/) - Easy to read and full of real world examples.
+* [The Art of Computer Programming](http://www-cs-faculty.stanford.edu/~uno/taocp.html) - The Book.
+
 
 
 
