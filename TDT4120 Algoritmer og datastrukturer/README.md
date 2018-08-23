@@ -25,8 +25,3 @@ A collection of resources containing summaries, video lectures, exams and more. 
 * Coming soon
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-I'll be adding more material as time allows me to do so.

@@ -28,4 +28,14 @@ These are some resources I came across and found to be helpful in my time at NTN
 * [Student Market](https://www.facebook.com/groups/288352844604218/?fb_dtsg_ag=AdyQXiwxpgK3r_hCX7Xm7P8Vi3bPgno-gIcDIAk4gM3LQw%3AAdw5fVQx4Ha_hY9eSZPijVyDKVt1sFTTVu6oOgbPT9M0yA) - Buy & Sell Books on facebook
 * [Open Video](https://video.adm.ntnu.no/) - Video lectuers at NTNU
 
+
+## List of subjects
+[TDT4120 - Algoritmer og datastrukturer](../TDT4120 Algoritmer og datastrukturer)
+
 I'll be adding more as times allows me to do so.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+I'll be adding more material as time allows me to do so.
