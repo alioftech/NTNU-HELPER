@@ -11,12 +11,12 @@ These are some resources I came across and found to be helpful in my time at NTN
 * [Wikipendium.no](https://www.wikipendium.no/) - compendium in most big subjects 
 
 
-
 ## Quick Cheats
 
+* [Github Search](https://github.com/search) - Find most subjects, code examples and more. Start looking here!
 * [YouKok2.com](youkok2.com) - Exams and soltuions sharing
 * [Youkok.com](http://youkok.com/) - INDØK ER "HOMO"
-* [Github Search](https://github.com/search) - Find most subjects, code examples and more. Start looking here!
+
 
 ## Technical Stuff
 * [Printer @ NTNU](https://innsida.ntnu.no/it-hjelp) - Setup printer, vpn and more (help pages)
@@ -30,12 +30,10 @@ These are some resources I came across and found to be helpful in my time at NTN
 
 
 ## List of subjects
-[TDT4120 - Algoritmer og datastrukturer](../TDT4120 Algoritmer og datastrukturer)
+[TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
 
 I'll be adding more as times allows me to do so.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-I'll be adding more material as time allows me to do so.
+License
+====
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
