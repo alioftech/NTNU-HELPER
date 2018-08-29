@@ -5,7 +5,7 @@ These are some resources I came across and found to be helpful in my time at NTN
 ## List of subjects
 * [TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
 * [TDT4856 IT-styring av moderne lastebiler](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4856%20IT-styring%20av%20moderne%20lastebiler)
-* [TTK4115 - Lineær systemteor](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4115%20-%20Lineær%20systemteori)
+* [TTK4115 - Lineær systemteori](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4115%20-%20Lineær%20systemteori)
 * [TTK4175 Instrumenteringssystemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4175%20Instrumenteringssystemer)
 * [TTK8 Konstruksjon av innebygde systemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK8%20Konstruksjon%20av%20innebygde%20systemer)
 
