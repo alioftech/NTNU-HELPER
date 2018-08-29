@@ -1,0 +1,72 @@
+\documentclass[abstract=on,a4paper]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{todonotes}
+\pgfplotsset{compat=1.12}
+\usepackage{textcomp}
+\usepackage[toc,page]{appendix}
+\usepackage{hyperref}
+\usepackage{pdfpages} %added by Ali for pdf vedlegg
+\usepackage{comment}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ 
+ 
+%-------------------------------------------
+\newcommand\Block[2]{%
+\setlength\fboxsep{0pt}\setlength\fboxrule{0.1pt}% delete
+\fbox{% delete
+\parbox[c][.5\textheight][t]{0.3\textwidth}
+{#1\par #2}
+%
+  }% delete
+}
+%--------------------------------------------
+
+\renewcommand{\figurename}{Figur}
+\renewcommand{\tablename}{Tabell}
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+\renewcommand\appendixpagename{Appendiks}
+\renewcommand{\bibname}{Kilder}
+% Edit the meta.tex file to change title, group number and author names
+\input{meta.tex}
+
+
+
+\begin{document}
+% The title page, edit if you want to customize it
+\input{title.tex}
+
+\newpage
+\tableofcontents{}
+
+% Main matter - edit corresponding file under content/ to change
+\input{content/1-introduksjon.tex}
+\input{content/2-medlemspresentasjon.tex}
+\input{content/3-case1}
+\input{content/3-case2}
+\input{content/3-case3}
+\input{content/4-medlemserfaringer.tex}
+\input{content/5-grupperfaringer.tex}
+\input{content/vedlegg.tex}
+
+\newpage
+\pagenumbering{gobble}
+
+% Bibliography - edit references.bib and use the \cite command in text
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
