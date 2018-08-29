@@ -1,0 +1,45 @@
+%===================================== CHAP 3 =================================
+
+\chapter{Preparing the PCB for manufacturing}
+This chapter explains how to export the gerber files, which are needed by the manufacturer to produce the PCB. As well as creating a BOM (bill of material) to order all of the needed components.
+
+
+\section{Exporting Gerber files} 
+To export the gerber files the Make function in Eagle is used to create a .zip file with the gerbers. 
+The files can be found under \textbf{[Installation-folder]/Gerbers} directory and selected layers can be seen in Appendix \ref{board_outlines}.
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+\rowcolor{Gray}
+File name & Description \\ 
+\hline \\
+brd.boardoutline.ger & Helps the manfacturer (Elprint) automatically detect the  \\ 
+ & board outline/dimensions \\ 
+
+\hline 
+brd.bottomlayer.ger & The copper bottom layer tells the manufacturer where to\\ 
+ &  lays copper on the bottom. \\ 
+\hline 
+brd.bottomsoldermask.ger & Bottom solder mask is a thin layer that protects against oxidations \\ 
+
+ & and helps preventing solder bridges between solder pads. \\ 
+\hline 
+brd.drills.xln & The drill file contains drilling details for production of the PCB.  \\ 
+\hline 
+brd.toplayer.ger & Contains the top copper layer. \\ 
+\hline 
+brd.topsilkscreen.ger & contains text and outline for the components drawn   \\ 
+\hline 
+brd.topsoldermask.ger & This covers all vias and component traces to protect from corrosion  \\
+				     & and accidental electrical shorts\\
+\hline
+\end{tabular} 
+\caption{Gerber files and description}
+\label{tb:gerber}
+\end{table}
+\section{Bil of Materials section}
+A bill of material (BOM) can be found in Appendix \ref{tb:BOM}
+

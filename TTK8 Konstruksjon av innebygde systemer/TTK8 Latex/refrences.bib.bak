@@ -1,0 +1,32 @@
+@misc{CADSymbols,
+author = {{Texas Instruments}},
+title = {{WEBENCH{\textregistered} CAD/CAE Symbols}},
+url = {https://webench.ti.com/cad/},
+urldate = {2017-11-01},
+year = {2016}
+}
+
+@misc{Texas2015,
+author = {Texas},
+title = {{Near Field Communication (NFC) Training Series Part 1: Near Field Communication Introduction | TI Training}},
+url = {https://training.ti.com/near-field-communication-nfc-training-series-part-1-near-field-communication-introduction?cu=257066},
+urldate = {2017-10-15},
+year = {2015}
+}
+
+@article{TexasInstruments2012,
+author = {{Texas Instruments}},
+file = {:home/ali/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2012 - RF430CL330H Dynamic NFC Interface Transponder 1 Device Overview.pdf:pdf},
+pages = {50},
+title = {{RF430CL330H Dynamic NFC Interface Transponder 1 Device Overview}},
+url = {http://www.ti.com/lit/ds/symlink/rf430cl330h.pdf},
+year = {2012}
+}
+
+@article{NFC_Module,
+abstract = {Design Overview TIDA-00524 provides a complete reference design for asset tracking and cold chain data logging with over 5 year battery life and a simple NFC (Near Field Communication) interface for configuration and read back. For maximum flexibility, the system offers the choice of multiple sensor configurations to monitor temperature (TMP112), ambient light (OPT3001), and/or humidity (HDC1000). NFC is provided by TI's RF430CL331H and up to 64KB of non-volatile FRAM memory is available with the MSP430FR5969 MCU.},
+file = {:home/ali/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - TIDU821– September 2015Ultralow Power Multi-sensor Data Logger with NFC Interface Reference Design 1 Ultralow Powe.pdf:pdf},
+keywords = {TIDU821},
+title = {{TIDU821– September 2015Ultralow Power Multi-sensor Data Logger with NFC Interface Reference Design 1 Ultralow Power Multi-sensor Data Logger with NFC Interface Reference Design}},
+url = {http://www.ti.com/lit/ug/tidu821/tidu821.pdf}
+}

@@ -1,0 +1,31 @@
+% This is a template made by Ali Aljumaili  - 40557884
+\documentclass[11pt,a4paper,twoside]{report}
+\input{docsetup.tex}
+\begin{document}
+\input{titlepage.tex}
+\pagenumbering{roman}		%% Start the roman page number
+\input{summary.tex}		%% Optional - Dedication
+\addcontentsline{toc}{chapter}{APPENDICES}
+
+
+\tableofcontents
+\pagenumbering{arabic}	%% Start the normal page numbering
+%\listoftodos % comment this when done
+%\thispagestyle{empty}
+\listoftables
+\listoffigures
+\newpage
+ 
+\pagenumbering{arabic}
+
+\input{content/chapter1-intro}
+\input{content/chapter2-system}
+\input{content/chapter3-ordering}
+\input{content/chapter4-testing}
+
+
+\input{content/attachments} %appendix
+
+
+
+\end{document}\grid

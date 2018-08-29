@@ -1,0 +1,56 @@
+\usepackage{setspace}
+\usepackage{placeins}
+
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage[Lenny]{fncychap}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{hyperref} %For adding hyperlinks
+\usepackage{adjustbox} %for fitting the tables
+\usepackage{xcolor,colortbl} %for colouring tables
+\usepackage{pdfpages} %for inserting pdf pages into latex
+\usepackage{todonotes} %inser todo
+\usepackage[titletoc]{appendix} %for appendices
+%for refrence style
+\usepackage[%
+  backend=bibtex      % biber or bibtex
+%,style=authoryear    % Alphabeticalsch
+ ,style=numeric-comp  % numerical-compressed
+ ,sorting=none        % no sorting
+ ,sortcites=true      % some other example options ...
+ ,block=none
+ ,indexing=false
+ ,citereset=none
+ ,isbn=true
+ ,url=true
+ ,doi=true            % prints doi
+ ,natbib=true         % if you need natbib functions
+]{biblatex}
+%\addbibresource{mendeley.bib}
+\addbibresource{refrences.bib}
+
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+%Formating of Header and footer
+\usepackage{fancyhdr} %Fancy Header
+\pagestyle{fancy}	  %Fancy Header
+\fancyfoot{}
+\fancyfoot[Lo,CE]{\thepage}
+
+
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{tikz}			 % For drawing stuff
+\usepackage{glossaries}		 % For abbrevations 
+\makeglossaries  			 %makes glossaries
+
+
+
+\graphicspath{{Illustrations/}}
