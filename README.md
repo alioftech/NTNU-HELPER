@@ -1,8 +1,15 @@
 # NTNU-HELPER
 These are some resources I came across and found to be helpful in my time at NTNU. Hope this can be of some help to someone out there.
 
-## Prerequisites
-* Internet
+
+## List of subjects
+* [TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
+* [TDT4856 IT-styring av moderne lastebiler](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4856%20IT-styring%20av%20moderne%20lastebiler)
+* [TTK4115 - Lineær systemteor](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4115%20-%20Lineær%20systemteori)
+* [TTK4175 Instrumenteringssystemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4175%20Instrumenteringssystemer)
+* [TTK8 Konstruksjon av innebygde systemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK8%20Konstruksjon%20av%20innebygde%20systemer)
+
+I'll be adding more as times allows me to do so.
 
 
 ## Books and soltuion manuals and compendium
@@ -28,11 +35,6 @@ These are some resources I came across and found to be helpful in my time at NTN
 * [Student Market](https://www.facebook.com/groups/288352844604218/?fb_dtsg_ag=AdyQXiwxpgK3r_hCX7Xm7P8Vi3bPgno-gIcDIAk4gM3LQw%3AAdw5fVQx4Ha_hY9eSZPijVyDKVt1sFTTVu6oOgbPT9M0yA) - Buy & Sell Books on facebook
 * [Open Video](https://video.adm.ntnu.no/) - Video lectuers at NTNU
 
-
-## List of subjects
-[TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
-
-I'll be adding more as times allows me to do so.
 
 License
 ====
