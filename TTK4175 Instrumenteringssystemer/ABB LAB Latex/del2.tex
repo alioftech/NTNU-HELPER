@@ -1,0 +1,20 @@
+\section{Part 2: Testing hardware}
+
+Testing the hardware was done by importing the lab template, then examination the connected IO modules. By inspection the IO parameters were identified, this gave the possibility to do the following:
+
+ \begin{itemize}
+    \item {Read the status of the motor}
+     \item {Connect and disconnect the load.}
+    \item {Find the relationship between reference value real RPM.}
+   
+ \end{itemize}
+
+
+\subsection{Relationship between speed and reference value}
+
+The relationship was found by experimenting and reading the RPM speed from the LCD on the DCS 400 system. For each 1000 the rpm value increased by 75.2, this gives \( \frac{1000}{75.2} \), by dividing the reference value by a factor of 13.3 as shown in Figure \ref{motor_st} we can compute the real RPM speed.
+
+\hfill \break
+\subsection{Effects of connecting the load}
+Connecting the load causes the speed to drop slightly, this is explained by that the power = rotational speed x torque. As the load is applied the motor draws more current, which increases torque. However as current flows through their windings their resistance causes the effective voltage to drop, so speed decreases
+

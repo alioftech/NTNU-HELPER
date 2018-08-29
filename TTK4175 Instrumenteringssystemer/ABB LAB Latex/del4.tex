@@ -1,0 +1,36 @@
+\newpage
+\section{Part 4: Temperature-regulator}
+
+\subsection{Developing the controller}
+
+This can be done by adding a PID controller block, then connecting the input signal to the set value of the wanted temperature, and the output to the speed of the motor, the generator produces energy which is transferred to the heating element inside of the water tank, heating up the water.
+
+After completing Part 1-3, we started developing a temperature-regulator based on the applied load. As mentioned in the assignment text, we chose to implement the PidCC from the Standard Library, using four of its connections: 
+
+tempset $\rightarrow$ Real$\_$to$\_$CC $\rightarrow$ Input SV @ PID.
+
+M4$\_$PT100.Value $\rightarrow$ Real$\_$to$\_$CC $\rightarrow$ Input PV @ PID.
+
+Ouput$\_$CC @ PID $\rightarrow$ CC$\_$to$\_$int $\rightarrow$ Output to Speed$\_$Setspeed.Value
+
+And we also changed the maximum range to the parameter Maxspeed which is equal to 20 000.
+
+One of the \textbf{challenges} we faced during this part was to create the controller as a control module type. This caused a lot of errors, and made us complete this part inside the CDM editor of the application. Then the connections were a lot easier to implement, and by using the "invisible" function of the RealToCC and CCToInteger blocks, we were able to make a smooth interaction object for the PID.
+
+\subsection{Tuning the PID Controller}
+
+The tuning started out with the PID-parameters provided in the assignment text.
+
+$\rightarrow$ \textbf{P} = 3.0
+
+$\rightarrow$ \textbf{I} = 240 (seconds)
+
+$\rightarrow$ \textbf{dead zone} = 0.01 (Removing noise)
+
+$\rightarrow$ \textbf{direction} = REVERSE
+
+These parameters provided a rather slow response. Then we disabled both the \textbf{I} and the \textbf{D}, and increased the \textbf{P} until we found a suitable gain, befor we enabled the \textbf{I} back to 240 seconds again.
+
+Water and fluids in general has relatively high heat capacity, and responds very slow to changes in temperature. But in the end, with a \textbf{gain} of \textbf{30} and \textbf{I = 240}, the PID controller anticipated the heat capacity, and decreased the output long before the set-value was reached. This resulted in a regulation of \textbf{+/- 0.5} degrees celsius.
+
+\textbf{Some thoughts } around the regulation is to decrease the maximum range of the output if this has not already been accounted for. If the maximum speed of the motor really was 20 000, it would not be ideal to make the PID-regulator output driving the motor at full speed if the resulting temperature would be almost as good if the maximum range was set to 18 000 or lower.

@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{parskip} %skip the indent of a new paragraph.
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\lstset{language=Matlab, frame=single, breaklines=true,numbers=left, keywordstyle=\color{blue},rulecolor=\color{black},commentstyle=\color{gray}}
+
+\usepackage{cleveref}
+\usepackage{todonotes}
+
+\title{TTK4175 - Instrumenteringssystemer\\\Large{\textbf{Profibus}}}
+\author{Håkon Espeland -- 772703 \\ Ali Al-Jumaili -- 772170 \\\\ Group 05}
+\date{20. March 2017}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \rule{\linewidth}{0.5mm}
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/logontnu_eng}
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+\newpage\null\thispagestyle{empty}\newpage
+%\section*{Table of contents} 
+\tableofcontents
+\thispagestyle{empty} %Avoid page numbering on the table of contents
+\newpage   
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\setcounter{page}{1}
+\input{p1}
+\input{p2}
+\input{p3}
+\input{p4}
+\input{p5}
+\input{p6}
+\end{document}
