@@ -1,0 +1,136 @@
+\section{Part II – Mono-variable control}
+\subsection{Problem 1 - PD controller}
+A PD controller is added to control the pitch angle p. This controller is given as:
+
+\begin{equation} \label{eq:PD}
+    \widetilde{V}_d = K_{pp}(\widetilde{p}_c - \widetilde{p}) - K_{pd} \dot{\widetilde{p}} 
+\end{equation}
+
+with constants $K_{pp}$, $K_{pd} > 0$, where $\widetilde{p}_c$ is the desired reference for the pitch angle $\widetilde{p}$.
+
+from (6a):
+\begin{equation}
+    \ddot{\widetilde{p}} = K_1 {\widetilde{V}_d}    
+\end{equation}
+
+
+Substituting $\widetilde{V_d}$
+
+\begin{equation*}
+    \ddot{\widetilde{p}} = K_1 K_{pp}(\widetilde{p}_c - \widetilde{p}) - K_1K_{pd} \dot{\widetilde{p}}    
+\end{equation*}
+
+
+
+
+Applying laplace transformation to obtain the transferfunction H(s):
+
+\begin{equation*}
+    {s^2}\tilde P = {K_1}{K_{pp}}({{\tilde P}_c} - \tilde P) - {K_1}{K_{pd}} {\tilde P}s
+\end{equation*}
+
+\begin{equation}\label{eq:Transferfunction}
+\frac{{\tilde P}(s)}{{{{\tilde P}_c}(s)}} = \frac{{{K_1}{K_{pp}}}}{{{s^2} + s{K_1}{K_{pd}} + {K_1}{K_{pp}}}}
+\end{equation}
+
+
+\renewcommand\labelitemi{\tiny$\bullet$}
+\textbf{Criterias for the controller:}
+\begin{itemize}
+\item No oscillations (Critically damped $\zeta = 1$).
+\item Responsive pitch regulator.
+\end{itemize}
+
+\begin{equation*}
+H(s) = \frac{w_n^2}{s^2 + 2\zeta w_ns + w_n^2}
+\end{equation*}
+
+
+The general equation H(s) provides a relationship between $w_n$ and $\zeta$, which we can use to obtain the relationship between $K_{pp}$ and $K_{pd}$.
+
+Looking at Equation:(\ref{eq:Transferfunction}), we extracts values to calculate $K_{pp}$ and $K_{pd}$:
+
+\begin{equation*}
+    {K_1}{K_{pd}} = 2\zeta {\omega _n}
+\end{equation*}
+
+\begin{equation*}
+    {K_1}{K_{pp}} = {\omega _n}^2 \to {\omega _n} = \sqrt {{K_1}{K_{pp}}}
+\end{equation*}
+
+Substituting $\omega_n$:
+
+\begin{equation*}
+    {K_1}{K_{pd}} = 2\zeta \sqrt {{K_1}{K_{pp}}} 
+\end{equation*}
+
+Computing the equation provides:
+
+\begin{equation*}
+    {\left( {\frac{{{K_1}{K_{pd}}}}{{2\zeta }}} \right)^2} = {K_1}{K_{pp}}
+\end{equation*}
+
+\begin{equation*}
+    {K_{pp}} = \frac{{{K_1}{K_{pd}}^2}}{{4{\zeta ^2}}}
+\end{equation*}
+
+Choosing $\zeta$ to be equal to 1, avoiding oscillations, we obtain:
+
+\begin{equation}\label{eq:Pitch gains}
+    {K_{pp}} = \frac{{{K_1}{K_{pd}}^2}}{4}
+\end{equation}
+
+From (\ref{eq:Pitch gains}) the relationsship between $K_{pp}$ and $K_{pd}$ is expressed. As of the transfer function $H(s)$, changing these values result in change in the placement of the poles. Solving the equation for the polynomial denominator in the transfer function we see that negative gains places the poles in the right-half-plane, which will result in an unstable system. To get a stable system we need positive gains, placing the poles in the left-half-plane.
+
+\begin{equation}\label{eq:transferfunction polynomial}
+    s = \frac{{ - {K_1}{K_{pd}} \pm \sqrt {{K_1}^2{K_{pd}}^2 - 4{K_1}{K_{pp}}} }}{2}
+\end{equation}
+
+In theory increasing the gains would decrease the response time, but the hardware does have a limit on maximum input and output values. Closing in on these limit-values might cause oscillations due to limitations in system performance.
+
+After testing with different values for the gains, we found the appropriate gains to be:
+$K_{pd}=10$
+$K_{pp}=21.5$
+
+\textbf{Pitch MATLAB-script}
+\begin{lstlisting}
+%Pitch Controller Gains
+K_pd = 10;                
+K_pp = K1*K_pd^2/4;      
+
+
+\end{lstlisting}
+
+%--------------------------------
+% Problem 2.2 - Travel Rate
+%--------------------------------
+\subsection{Problem 2 - Travel rate}
+Estimating the travel rate $\dot{\widetilde{\lambda}}$, using a simple P controller:
+
+\begin{equation}\label{eq:Travel controller}
+    {\tilde p_c} = {K_{rp}}({\dot{\tilde\lambda}_c} - \dot{\tilde \lambda} )
+\end{equation}
+
+Inserting (\ref{eq:Travel_ddot}) into (\ref{eq:Travel controller}), while assuming $\widetilde{p}_c = p$ we obtain the following:
+
+\begin{equation}
+    \ddot{\tilde{\lambda}}  = {K_3}{K_{rp}}({{\dot {\tilde \lambda} }_c} - \dot{\tilde \lambda} )
+\end{equation}
+
+Applying Laplace transform:
+
+\begin{equation}
+    s\dot{\tilde \lambda}(s) = {K_3}{K_{rp}}({{\dot{\tilde \lambda}}_c}(s) - \dot{\tilde \lambda} (s))
+\end{equation}
+
+\begin{equation}
+    \dot {\tilde \lambda} (s) = \frac{{{K_3}{K_{rp}}{{\dot {\tilde \lambda} }_c}(s)}}{{s + {K_3}{K_{rp}}}}
+\end{equation}
+
+\begin{equation}
+    \frac{{\dot {\tilde \lambda}(s) }}{{{{\dot {\tilde \lambda}_c(s) }}}} = \frac{p}{{s + p}}
+\end{equation}
+
+where $p = K_3K_{rp}$. Desired maximum travel rate is set to be $\frac{\pi}{4}$ rad/s, keeping $\left| {\dot{\widetilde{p}_c}} \right| < {\frac{\pi }{4}}$.
+
+

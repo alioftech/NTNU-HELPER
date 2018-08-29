@@ -1,0 +1,260 @@
+\newpage
+\section{Observability}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 4.1 Derivation of State Space Matrices
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Derivation of State Space Matrices}
+The derivation of the State Space Matrices is done with the state vector, input and disturbance as shown here:
+\begin{equation}\label{state vector}
+\begin{array}{ccc}
+     x = \left[ {\begin{array}{*{20}{c}}
+{{\xi _\omega }}\\
+{{\psi _\omega }}\\
+\psi \\
+r\\
+b
+\end{array}} \right],&  
+    u = \delta  ,&  
+    \omega  = \left[ {\begin{array}{*{20}{c}}
+    {{\omega _\omega }}\\
+    {{\omega _b}}
+\end{array} }\right] 
+\end{array}
+\end{equation}
+
+We have the following model:
+\begin{align}
+    \begin{array}{l}
+{{\dot \xi }_2} = {\psi _\omega }\\
+{{\dot \psi }_\omega } =  - {\omega _0}^2{\xi _\omega } - 2\lambda {\omega _0}{\psi _\omega } + {K_\omega }{\omega _\omega }\\
+\dot \psi  = r\\
+\dot r =  - \frac{1}{T} + \frac{K}{T}(\delta  - b)\\
+\dot b = {\omega _b}\\
+y = \psi  + {\psi _\omega } + v
+\end{array}
+\end{align}
+
+The system can be written as:
+
+\begin{equation}
+\begin{array}{cc}
+    \dot{x} = \left[ {\begin{array}{*{20}{c}}
+{{x_2}}\\
+{ - {\omega _0}^2{x_1} - 2\lambda {\omega _0}{x_2} + {K_\omega }{\omega _1}}\\
+{{x_4}}\\
+{ - \frac{1}{T}{x_4} - \frac{K}{T}{x_5} + \frac{K}{T}u}\\
+{{\omega _2}}
+\end{array}} \right] ,&  
+    y = {x_2}{x_3} + v  
+\end{array}
+\end{equation}
+
+This corresponds to a system on the following form:
+
+\begin{equation}
+   \begin{array}{l}
+\dot x = Ax + Bu + E\omega \\
+y = Cx + v
+\end{array}
+\end{equation}
+
+with matrices:
+\begin{equation*}\label{matrices}
+   \begin{array}{cccc}
+       A = \left[ {\begin{array}{*{20}{c}}
+0&1&0&0&0\\
+{ - {\omega _0}^2}&{ - 2\lambda {\omega _0}}&0&0&0\\
+0&0&0&1&0\\
+0&0&0&{ - \frac{1}{T}}&{ - \frac{K}{T}}\\
+0&0&0&0&0
+\end{array}} \right] ,&
+       B = \left[ {\begin{array}{*{20}{c}}
+0\\
+0\\
+0\\
+{\frac{K}{T}}\\
+0
+\end{array}} \right] ,& \\\\
+       E = \left[ {\begin{array}{*{20}{c}}
+0&0\\
+{{K_\omega }}&0\\
+0&0\\
+0&0\\
+0&1
+\end{array}} \right] ,&
+       C = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0&0
+\end{array}} \right]
+   \end{array}
+\end{equation*}
+
+To check the observability of the system, we use these following parameters that were calculated in previous sections:
+
+\begin{equation}
+   \begin{array}{l}
+K = 0.1742\\
+T = 86.5268\\
+{\omega _0} = 0.7823\\
+\lambda  = 0.0862
+\end{array}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 4.2 Observability without Disturbances
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observability without disturbances}
+Without disturbances, both the state vector from equation  (\ref{state vector}) and the matrices A and C are rewritten as:
+
+\begin{equation}
+   x = \left[ {\begin{array}{*{20}{c}}
+\psi \\
+r
+\end{array}} \right]
+\end{equation}
+
+\begin{equation*}
+   \begin{array}{cc}
+       A = \left[ {\begin{array}{*{20}{c}}
+0&1\\
+0&{ - \frac{1}{T}}
+\end{array}} \right] ,&  
+       C = \left[ {\begin{array}{*{20}{c}}
+1&0
+\end{array}} \right]  
+   \end{array}
+\end{equation*}
+
+This provides an observability matrix which has a rank of 2, meaning the system is observable.
+
+\begin{equation}
+   \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+1&0\\
+0&1
+\end{array}} \right]
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 4.3 Observability with current disturbance
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observability with current disturbance}
+When current disturbance is applied, it is necessary to rewrite both the state vector and the matrices A and C again, on the form:
+
+\begin{equation}
+    x = \left[ {\begin{array}{*{20}{c}}
+\psi \\
+r\\
+b
+\end{array}} \right]
+\end{equation}
+
+\begin{equation}
+    \begin{array}{cc}
+       A = \left[ {\begin{array}{*{20}{c}}
+0&1&0\\
+0&{ - \frac{1}{T}}&{ - \frac{K}{T}}\\
+0&0&0
+\end{array}} \right] ,&  
+       C = \left[ {\begin{array}{*{20}{c}}
+1&0&0
+\end{array}} \right] 
+    \end{array}
+\end{equation}
+
+The observability matrix for the system with current disturbance is given by (\ref{observer}), and by using the MatLab command $rank(Ob)$, we can see that it has full row rank of 3, meaning the system is observable.
+
+\begin{equation*}
+    \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+1&0&0\\
+0&1&0\\
+0&{ - \frac{1}{T}}&{ - \frac{K}{T}}
+\end{array}} \right]
+\end{equation*}
+
+\begin{equation}\label{observer}
+    \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+1&0&0\\
+0&1&0\\
+0&{ - 0.0116}&{ - 0.0020}
+\end{array}} \right]
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 4.4 Observability with wave disturbance
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observability with wave disturbance}
+With wave disturbance is applied, the state vector and the matrices A and C are rewritten on the form:
+
+\begin{equation}
+    x = \left[ {\begin{array}{*{20}{c}}
+{{\xi _\omega }}\\
+{{\psi _\omega }}\\
+\psi \\
+r
+\end{array}} \right]
+\end{equation}
+
+\begin{equation}
+    \begin{array}{cc}
+        A = \left[ {\begin{array}{*{20}{c}}
+0&1&0&0\\
+{ - {\omega _o}^2}&{ - 2\lambda {\omega _0}}&0&0\\
+0&0&0&1\\
+0&0&0&{ - \frac{1}{T}}
+\end{array}} \right] ,&  
+       C = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0
+\end{array}} \right]
+    \end{array}
+\end{equation}
+
+Using the same MatLab command as in the previous section, we find that the observability matrix has a rank of 4, meaning that this fourth order system is observable.
+
+\begin{equation*}
+    \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0\\
+{ - {\omega _o}^2}&{ - 2\lambda {\omega _0}}&0&1\\
+{2\lambda {\omega _0}^3}&{4{\lambda ^2}{\omega _0}^2 - {\omega _0}^2}&0&{ - \frac{1}{T}}\\
+{ - {\omega _0}^4(4{\lambda ^2} - 1)}&{ - 8{\lambda ^3}{\omega _0}^3 + 4\lambda {\omega _0}^3}&0&{\frac{1}{{{T^2}}}}
+\end{array}} \right]
+\end{equation*}
+
+\begin{equation}
+   \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0\\
+{ - 0.6120}&{ - 0.1239}&0&1\\
+{0.0825}&{ - 0.1349}&0&{ - 0.0116}\\
+{0.3635}&{0.1626}&0&{0.001}
+\end{array}} \right]
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 4.5 Observability with wave and current disturbances
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observability with wave and current disturbances}
+
+With both wave and current disturbances, we use the state vector from (\ref{state vector}) with corresponding matrices from section 4.1 to obtain the observability matrix shown in (\ref{ob5}). This observability matrix has a rank of 5, meaning this fifth order system is observable.
+
+\begin{equation*}
+    \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0&0\\
+{ - {\omega _0}^2}&{ - 2\lambda {\omega _0}}&0&1&0\\
+{2\lambda {\omega _0}^3}&{4{\lambda ^2}{\omega _0}^2 - {\omega _0}^2}&0&{ - \frac{1}{T}}&{ - \frac{K}{T}}\\
+{ - {\omega _0}^4(4{\lambda ^2} - 1)}&{ - 8{\lambda ^3}{\omega _0}^3 + 4\lambda {\omega _0}^3}&0&{\frac{1}{{{T^2}}}}&{\frac{K}{{{T^2}}}}\\
+{8{\lambda ^3}{\omega _0}^5 + 4\lambda {\omega _0}^5}&{16{\lambda ^4}{\omega _0}^4 + 12{\lambda ^2}{\omega _0}^4 + {\omega _0}^4}&0&{ - \frac{1}{{{T^3}}}}&{ - \frac{K}{{{T^3}}}}
+\end{array}} \right]
+\end{equation*}
+
+\begin{equation}\label{ob5}
+   \mathbf{\math\mathcal{O}} = \left[ {\begin{array}{*{20}{c}}
+0&1&1&0&0\\
+{ - 0.6120}&{ - 0.1349}&0&1&0\\
+{0.0825}&{ - 0.5939}&0&{ - 0.0116}&{ - 0.0020}\\
+{0.03635}&{0.1626}&0&{0.0001}&{2.3 \cdot {{10}^{ - 5}}}\\
+{ - 0.0995}&{0.3415}&0&{ - 1.5 \cdot {{10}^{ - 6}}}&{ - 2.7 \cdot {{10}^{ - 7}}}
+\end{array}} \right]
+\end{equation}

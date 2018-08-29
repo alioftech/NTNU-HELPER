@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{parskip} %skip the indent of a new paragraph.
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\lstset{language=Matlab, frame=single, breaklines=true,numbers=left, keywordstyle=\color{blue},rulecolor=\color{black},commentstyle=\color{gray}}
+
+\usepackage{cleveref}
+\usepackage{todonotes}
+
+\title{Linear Systems TTK4115\\\Large{\textbf{Discrete Kalman Filter Applied to a Ship Autopilot}}}
+\author{Håkon Espeland -- 772703 \\ Ali Al-Jumaili -- 772170 \\\\ Group 63}
+\date{20. November 2016}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \rule{\linewidth}{0.5mm}
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/logontnu_eng}
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+\newpage\null\thispagestyle{empty}\newpage
+%\section*{Table of contents} 
+\tableofcontents
+\thispagestyle{empty} %Avoid page numbering on the table of contents
+\newpage   
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\setcounter{page}{1}
+\input{1BoatParameters}
+\input{2WaveSpectrum}
+\input{3ControlSystem}
+\input{4Observability}
+\input{5Kalman}
+\newpage\null\thispagestyle{empty}\newpage
+\input{Conclusion}
+\input{Appendix}
+
+
+\end{document}

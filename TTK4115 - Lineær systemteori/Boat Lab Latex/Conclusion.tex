@@ -1,0 +1,12 @@
+\newpage
+\section{Conclusion}
+
+After identifying model parameters in section 1, we were able to develop a feasible approximation of the ship model. By analyzing the input and output responses, a ship model with measurement noise, wave disturbance and current disturbance were developed. 
+
+The implementation of the discrete Kalman filter was intended for improvement of the control of the ship. To make this implementation possible, we identified the necessary wave base frequency $\omega_{0}$ and the wave damping factor $\lambda$ in section 2. Figure \ref{plot:2d} shows that the analytically derived and the estimated PSD functions cohere. 
+
+A PD controller is designed in section 3 to keep angle of the heading at a desired value. Tuning of this particular controller is done so that the damping part cancels the ship time constant, putting the pgase margin and cut-off frequency values respectively to $\phi  = {50^o}$ and ${\omega _c} = 0.1\frac{{rad}}{s}$. These characteristics are proved in figure \ref{plot:3a}.
+
+In section 4 we check the observability of the system. This is done by transforming the system into state-space form, and calculating the observability matrices in MatLab. After checking the rank of each observability matrix in section 4, we could declare the system observable independent of the composition of disturbances.
+
+The final part of this assignment was completed in section 5, where a discrete Kalman filter is applied. This was done through discretization of the system using MatLab before the Kalman filter was implemented using a Matlab function within the Matlab Simulink Block with persistent variables, according to Appendix B in the assignment text.

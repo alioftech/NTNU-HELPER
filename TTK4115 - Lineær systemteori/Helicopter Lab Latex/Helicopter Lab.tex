@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{parskip} %skip the indent of a new paragraph.
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\lstset{language=Matlab, frame=single, breaklines=true,numbers=left, keywordstyle=\color{blue},rulecolor=\color{black},commentstyle=\color{gray}}
+
+\usepackage{cleveref}
+\usepackage{todonotes}
+\usepackage{soul}
+\usepackage{caption} 
+
+\captionsetup[table]{skip=10pt}
+
+
+
+
+\title{TTK4115 Linear System Theory\\  Helicopter Lab Report}
+\author{
+  Aljumaili, Ali\\
+  \texttt{772170}
+  \and
+  Espeland, Håkon\\
+  \texttt{772703}\\
+  }
+
+\date{\parbox{\linewidth}{\centering%
+  \today\endgraf\bigskip
+  Group 63
+  }}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \rule{\linewidth}{0.5mm}
+    
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/logontnu_eng}
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+
+%\section*{Table of contents} 
+\tableofcontents
+\listoffigures
+\thispagestyle{empty} %Avoid page numbering on the table of contents
+\newpage    
+
+
+
+\setcounter{page}{1}
+
+%\input{abbreviations.tex}	%% Optional
+\input{Part1MathmaticalModeling}
+\input{Part1Linerizeation}
+\input{Part2MonoVaribleControl}
+\input{Part3MultivaribleVaribleControl}
+\input{Part4StateEstimation}
+
+
+
+\end{document}
