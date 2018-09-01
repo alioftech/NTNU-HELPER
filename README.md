@@ -5,9 +5,15 @@ These are some resources I came across and found to be helpful in my time at NTN
 ## List of subjects
 * [TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
 * [TDT4856 IT-styring av moderne lastebiler](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4856%20IT-styring%20av%20moderne%20lastebiler)
+* [TIØ4295 Bedriftsøkonomi](https://github.com/jumaili/NTNU-HELPER/tree/master/TIØ4295%20Bedriftsøkonomi)
+* [TT4120 Digital signalbehandling](https://github.com/jumaili/NTNU-HELPER/tree/master/TT4120%20Digital%20signalbehandling)
 * [TTK4115 - Lineær systemteori](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4115%20-%20Lineær%20systemteori)
+* [TTK4145 - Sanntidsprogrammering](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4145%20-%20Sanntidsprogrammering)
+* [TTK4150 - Ulineære systemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4150%20-%20Ulineære%20systemer)
+* [TTK4155 - Industrielle og innbygde datasystemers konstruksjon](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4155%20-%20Industrielle%20og%20innbygde%20datasystemers%20konstruksjon)
 * [TTK4175 Instrumenteringssystemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK4175%20Instrumenteringssystemer)
 * [TTK8 Konstruksjon av innebygde systemer](https://github.com/jumaili/NTNU-HELPER/tree/master/TTK8%20Konstruksjon%20av%20innebygde%20systemer)
+* [TTM4100 - Kommunikasjon - Tjenester og nett](https://github.com/jumaili/NTNU-HELPER/tree/master/TTM4100%20-%20Kommunikasjon%20-%20Tjenester%20og%20nett)
 
 I'll be adding more as times allows me to do so.
 
