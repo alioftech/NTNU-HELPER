@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/jumaili/https://github.com/jumaili/NTNU-HELPER.svg)](http://hits.dwyl.io/jumaili/https://github.com/jumaili/NTNU-HELPER)
+
 # NTNU-HELPER
 These are some resources I came across and found to be helpful in my time at NTNU. Hope this can be of some help to someone out there.
 
