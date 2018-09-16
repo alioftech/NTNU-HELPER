@@ -3,6 +3,7 @@
 # NTNU-HELPER
 These are some resources I came across and found to be helpful in my time at NTNU. Hope this can be of some help to someone out there.
 
+> “***Alone we can do so little; together we can do so much***” ~ Helen Keller
 
 ## List of subjects
 * [TDT4120 - Algoritmer og datastrukturer](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
