@@ -1,9 +1,10 @@
+[![HitCount](http://hits.dwyl.io/jumaili/https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer.svg)](http://hits.dwyl.io/jumaili/https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer)
+
 ## TDT4120 - Algoritmer og datastrukturer
 A collection of resources containing summaries, video lectures, exams and more. Feel free to contribute by making a pull request!
 
-## Lectures and exams
-* Lecturers Folder - Coming soon
-* Exams Folder  - Coming soon
+## Exams
+* [Exams Folder](https://github.com/jumaili/NTNU-HELPER/tree/master/TDT4120%20Algoritmer%20og%20datastrukturer/Exams)
 
 ## Books and summaries    
 
